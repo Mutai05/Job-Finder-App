@@ -20,13 +20,9 @@
     <h2 class="text-center mt-2 mb-4">Open Positions</h2>
     <div class="mt-2 mb-4">
       {% for job in jobs %}
-        <div>
-          <h4>{{job['title']}}</h4>
-          <div><b>Location:</b> {{job['location']}}</div>
-        </div>
+        {% include 'jobitem.html' %}
       {% endfor %}
     </div>
-    </div
     <div class="text-center">
       <button class="btn btn-primary btn-lg">Contact Us</button>
       <p class="mt-4">Copyright 2024, JobFinder App</p>
