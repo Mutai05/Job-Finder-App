@@ -18,9 +18,15 @@
     <p class="text-center">JobFinder, aims to simplify the job search process by connecting job seekers with opportunities that match their skills and aspirations. </p>
     
     <h2 class="text-center mt-2 mb-4">Open Positions</h2>
-    <p>
-      {{jobs}}
-    </p>
+    <div class="mt-2 mb-4">
+      {% for job in jobs %}
+        <div>
+          <h4>{{job['title']}}</h4>
+          <div><b>Location:</b> {{job['location']}}</div>
+        </div>
+      {% endfor %}
+    </div>
+    </div
     <div class="text-center">
       <button class="btn btn-primary btn-lg">Contact Us</button>
       <p class="mt-4">Copyright 2024, JobFinder App</p>
