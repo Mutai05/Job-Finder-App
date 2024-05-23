@@ -6,20 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <title>JobFinder App</title>
+  
 </head>
 <body>
   <div class="container">
-    <h1 class="text-center mt-2 mb-4">JobFinder App</h1>
+    <h1 class="text-center mt-2 mb-4">{{company_name}} App</h1>
     <p class="text-center">Hello there, Welcome to JobFinder App!</p>
     <img class="img-fluid" src="https://e018f838-ce03-4df5-a480-59566968929b-00-xhnn5jol99dg.worf.replit.dev/static/banner.jpg" width="1920" height="1080">
+    
     <h2 class="text-center mt-2 mb-4">About JobFinder App</h2>
     <p class="text-center">JobFinder, aims to simplify the job search process by connecting job seekers with opportunities that match their skills and aspirations. </p>
+    
     <h2 class="text-center mt-2 mb-4">Open Positions</h2>
-    <p class="text-center">TODO - Show the Jobs</p>
+    <p>
+      {{jobs}}
+    </p>
     <div class="text-center">
       <button class="btn btn-primary btn-lg">Contact Us</button>
       <p class="mt-4">Copyright 2024, JobFinder App</p>
     </div>
   </div>
+  
 </body>
 </html>
